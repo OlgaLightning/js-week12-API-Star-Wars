@@ -83,4 +83,9 @@ button {
     form {
         flex-wrap: wrap;
     }
+
+    .answer {
+        font-size: 20px;
+        width: 50vw;
+    }
 }
