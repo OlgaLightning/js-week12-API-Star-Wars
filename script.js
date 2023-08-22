@@ -1,15 +1,25 @@
+//Получаем доступ к DOM (форме и кнопке)
+
 const selectInput = document.querySelector('#item');
 const insertNumber = document.querySelector('#numbers');
 const button = document.querySelector('.btn');
 
+//Вешаем подслушку на кнопку
+
 button.addEventListener('click', function () {
+
+    //Назначаем переменные для получения введенных пользователем данных
 
     const selectedItem = selectInput.value;
     const selectedNumber = insertNumber.value;
 
     const answer = document.querySelector('.answer');
 
+    //Опустошаем предыдущие записи
+
     answer.innerHTML = '';
+
+    //Условие запроса на получение данных о планетах, людях и фильмах с сервера 
 
     if (selectedItem === 'Planets' && selectedNumber >= 1 && selectedNumber <= 10) {
         for (let i = 1; i <= 10; i++) {
