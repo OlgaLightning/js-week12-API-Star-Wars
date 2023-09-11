@@ -56,36 +56,3 @@ button {
     margin: auto;
     font-family: 'Barlow Condensed', sans-serif;
 }
-
-@media all and (max-width: 820px) {
-
-    body {
-        height: 100vh;
-        background-position: center;
-    }
-}
-
-@media all and (max-width: 500px) {
-
-    h1 {
-        font-size: 34px;
-        text-align: center;
-    }
-
-    input,
-    select,
-    button {
-        padding: 7px;
-        margin: 0 3px;
-        font-size: 16px;
-    }
-
-    form {
-        flex-wrap: wrap;
-    }
-
-    .answer {
-        font-size: 22px;
-        width: 70vw;
-    }
-}
